@@ -217,6 +217,10 @@ func gcsRequest(w http.ResponseWriter, r *http.Request) {
 		url += "&marker=" + markers[0]
 	}
 
+	if key := os.Getenv("API_KEY"); len(key) > 0 {
+		url += fmt.Sprintf("&key=%s", key)
+	}
+
 	resp, err := http.Get(url)
 	if err != nil {
 		logger.Printf("GET %s: %s", url, err)
