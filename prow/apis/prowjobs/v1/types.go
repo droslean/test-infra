@@ -25,11 +25,6 @@ import (
 	"strings"
 	"time"
 
-<<<<<<< HEAD
-	"github.com/sirupsen/logrus"
-	pipelinev1alpha1 "github.com/tektoncd/pipeline/pkg/apis/pipeline/v1alpha1"
-=======
->>>>>>> 2159141832 (deprecate the usage of the pipeline alphav1 library)
 	pipelinev1beta1 "github.com/tektoncd/pipeline/pkg/apis/pipeline/v1beta1"
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/resource"
